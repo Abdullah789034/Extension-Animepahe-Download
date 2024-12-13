@@ -1,7 +1,7 @@
 // contentScript.js
 
 const observer = new MutationObserver((mutations, observer) => {
-    const link = Array.from(document.querySelectorAll('a.dropdown-item')).find(el => el.textContent.includes('SCY · 1080p') && el.querySelector('span.badge-primary'));
+    const link = Array.from(document.querySelectorAll('a.dropdown-item')).find(el => el.textContent.includes('SubsPlease - 1080p') && el.querySelector('dropdown-item'));
 
     if (link) {
         console.log(link);
